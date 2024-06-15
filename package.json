@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "@types/prompt-sync": "^4.2.3",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "scripts": {
+    "build": "npx tsc fp.ts ip.ts oop.ts"
+  }
+}
