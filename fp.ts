@@ -82,6 +82,7 @@ const main_fp = () => {
   else {
     console.log(`Winner is player ${gameResult}.`);
   }
+  process.exit();
 }
 
 main_fp();

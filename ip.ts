@@ -70,6 +70,7 @@ const main_ip = () => {
       }
     }
   }
+  process.exit();
 }
 
 main_ip();

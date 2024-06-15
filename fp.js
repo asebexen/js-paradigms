@@ -69,5 +69,6 @@ var main_fp = function () {
     else {
         console.log("Winner is player ".concat(gameResult, "."));
     }
+    process.exit();
 };
 main_fp();

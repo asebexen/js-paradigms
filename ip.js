@@ -64,5 +64,6 @@ var main_ip = function () {
             }
         }
     }
+    process.exit();
 };
 main_ip();

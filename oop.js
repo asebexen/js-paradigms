@@ -148,12 +148,11 @@ var Game = /** @class */ (function () {
             rl.write(board.toString());
             var userInput = prompt('Make a move. (0-8) ');
             var position = parseInt(userInput);
-            if (board.getCell(position) !== '.') {
-                rl.write('That is not a valid space.\n');
+            if (board.setCell(position, this.getCurrentPlayer())) {
+                this.toggleCurrentPlayer();
             }
             else {
-                board.setCell(position, currentPlayer);
-                this.toggleCurrentPlayer();
+                rl.write('That is not a valid move.\n');
             }
         }
         if (board.checkTie()) {
@@ -168,5 +167,6 @@ var Game = /** @class */ (function () {
 var main_oop = function () {
     var game = Game.Default();
     game.start();
+    process.exit();
 };
 main_oop();
